@@ -1,0 +1,204 @@
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+*
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+
+
+BODY
+  font-size: 12px
+  padding: 0
+  margin: 0
+  background: #000
+  color: #000
+  font-family: Helvetica
+
+h1
+  font-size: 14px
+  padding: 0
+  margin: 0
+  text-align: center
+
+h2
+  padding: 0
+  margin: 0 0 10px
+  font-size: 16px
+  text-align: center
+
+
+// -----------------------------------------------------------------------------
+// Structure
+// -----------------------------------------------------------------------------
+.lcd-wrapper
+  display: flex
+  flex-direction: column
+  width: 800px
+  height: 480px
+  border: 2px solid #000
+  background: #CCC
+
+  .main
+    flex: 1
+    padding: 10px
+    .page-content
+      height: 333px
+
+  .status-bar
+    padding: 4px 10px
+    background: #999
+
+    .head
+      display: flex
+      margin-bottom: 4px
+      H1
+        flex-grow: 1
+
+    .date
+      position: absolute
+
+    NAV UL
+      display: flex
+      margin: 0
+      padding: 0
+      list-style: none
+      LI
+        flex-grow: 1
+
+  .foot
+    display: flex
+    border-top: 1px solid #333
+    padding: 4px 10px
+    text-align: center
+
+  .page-nav
+    margin-top: 15px
+    display: flex
+    flex-direction: row-reverse
+
+
+// -----------------------------------------------------------------------------
+// Components
+// -----------------------------------------------------------------------------
+.btn
+  display: inline-block
+  line-height: 40px
+  padding: 6px 12px
+  border: 1px solid #000
+  border-radius 4px
+  background-color: #EEE
+  color: #000
+  font-size: 16px
+  text-decoration: none
+
+.btn-disabled
+  background-color: #BBB
+  border-color: #AAA
+  color: #666
+
+
+.tile-btn
+  display: flex
+  flex-direction: column
+  width: 100px
+  height: 100px
+  line-height: 20px
+  margin: 10px 10px
+  text-align: center
+  .icon
+    flex: 1
+    border: 1px dotted #666
+    margin: 4px 0 6px
+    line-height: 12px
+    font-size: 12px
+
+.tiles
+  display: flex
+  flex-wrap: wrap
+
+.fields
+  margin: 0
+  padding: 0
+  list-style: none
+  .field
+    margin: 0
+    height: 100px
+  .field > *
+    vertical-align: top
+
+.fields.horizontal
+  .field
+    display: inline-block
+
+
+.switch
+  display: inline-block
+  margin-right: 10px
+  font-size: 16px
+  text-align: center
+
+.switch-label
+  font-size: 12px
+
+.switch-control
+  display: inline-block
+  width: 100px
+  height: 48px
+  padding: 2px
+  border: 1px solid #666
+  border-radius: 16px
+  &.on
+    background-color: #0C0
+  &.off
+    background-color: #C00
+
+.switch-btn
+  float: right
+  display: inline-block
+  width: 46px
+  height: 46px
+  border: 1px solid #666
+  border-radius: 12px
+  background: #999
+
+.switch-state-label
+  float: left
+  padding: 0 10px
+  line-height: 44px
+
+.switch-control.off
+  .switch-btn
+    float: left
+  .switch-state-label
+    float: right
+
+// -----------------------------------------------------------------------------
+// Component Instances
+// -----------------------------------------------------------------------------
+.foot .tile-btn,
+.page-nav .tile-btn
+  width: 60px
+  height: 40px
+
+.page-nav .tile-btn
+  width: 148px
+
+.preset-tiles .tile-btn
+  width: 148px
+  height: 45px
+
+// -----------------------------------------------------------------------------
+// Page Instances
+// -----------------------------------------------------------------------------
+.page-content.ccu
+  .switch
+    margin-right: 30px
+  .btn
+    width: 100px
+    margin-right: 10px
+
+.page-content.ccu-scenes
+  .btn
+    width: 200px

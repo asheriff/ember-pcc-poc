@@ -1,0 +1,36 @@
+<div class='lcd-wrapper'>
+  <div class='status-bar'>
+    <div class='head'>
+      <span class='date'>5/12/15 11:59:59</span>
+      <h1>Training Room 101</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li>
+          <span class='label'>Address</span>
+          <input type='text' value='123.12.12.123'/>
+        </li>
+        <li>
+          <span class='label'>Device Type</span>
+          <input type='text' value='RS-232'/>
+        </li>
+        <li>
+          <span class='label'>Status</span>
+          <input type='text' value='Streaming'/>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class='main'>
+    {{outlet}}
+  </div>
+
+  <div class='foot'>
+    {{#link-to 'home' class='btn tile-btn'}}
+      <span class='icon'>~icon~</span>
+      <span class='text'>Home</span>
+    {{/link-to}}
+  </div>
+</div>

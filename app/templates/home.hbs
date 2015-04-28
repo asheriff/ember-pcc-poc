@@ -1,0 +1,10 @@
+<h2>Home</h2>
+
+<div class='tiles'>
+  {{#each}}
+    {{#link-to route class='btn tile-btn'}}
+      <span class='icon'>~icon~</span>
+      <span class='text'>{{name}}</span>
+    {{/link-to}}
+  {{/each}}
+</div>
