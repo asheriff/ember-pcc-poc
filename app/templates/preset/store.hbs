@@ -3,28 +3,16 @@
 
   <ul class='fields'>
     <li class='field'>
-      <a href='#' class='btn'>Preset 1</a>
+      <a href='#' class='btn'>Select Preset...</a>
     </li>
 
     <li class='field'>
-      <span class='switch'>
-        <div class='switch-control off'>
-          <span class='switch-state-label'>Off</span>
-          <span class='switch-btn'></span>
-        </div>
-        <div class='switch-label'>Trisync</div>
-      </span>
+      {{switch-button label='Trisync'}}
       <a href='#' class='btn btn-disabled'>Trisync Speed...</a>
     </li>
 
     <li class='field'>
-      <span class='switch'>
-        <div class='switch-control on'>
-          <span class='switch-state-label'>On</span>
-          <span class='switch-btn'></span>
-        </div>
-        <div class='switch-label'>Color Settings</div>
-      </span>
+      {{switch-button label='Color Settings'}}
     </li>
   </ul>
 </div>

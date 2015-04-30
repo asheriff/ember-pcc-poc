@@ -16,8 +16,12 @@
           <input type='text' value='RS-232'/>
         </li>
         <li>
-          <span class='label'>Status</span>
-          <input type='text' value='Streaming'/>
+          <span class='label'>Streaming</span>
+          <input type='text' value='Active?'/>
+        </li>
+        <li>
+          <span class='label'>Comm?</span>
+          <input type='text' value='OK?'/>
         </li>
       </ul>
     </nav>
@@ -34,3 +38,5 @@
     {{/link-to}}
   </div>
 </div>
+
+{{outlet 'modal'}}

@@ -2,7 +2,7 @@ import Ember from 'ember';
 import _ from 'npm:underscore';
 
 var SCENE_NAMES = [
-  'Custom A', 'Custom B', 'Custom C',
+  'Custom A', 'My Label', 'Custom C',
   'Auto', 'Incandescent Hi', 'Flourescent Hi',
   'Outdoor', 'Incandescent Lo', 'Flourescent Lo'
 ]
