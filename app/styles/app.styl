@@ -34,17 +34,22 @@ h2
 // -----------------------------------------------------------------------------
 .lcd-wrapper
   display: flex
+  display: -webket-flex
   flex-direction: column
+  -webkit-flex-direction: column
   width: 800px
   height: 480px
   border: 2px solid #000
   background: #CCC
 
   .main
+    // display: flex
+    display: -webket-flex
     flex: 1
+    -webket-flex: 1
     padding: 10px
     .page-content
-      height: 333px
+      height: 342px
 
   .status-bar
     padding: 4px 10px
@@ -52,31 +57,45 @@ h2
 
     .head
       display: flex
+      display: -webket-flex
       margin-bottom: 4px
       H1
         flex-grow: 1
+        -webkit-flex-grow: 1
 
     .date
       position: absolute
 
+    .label
+      width: 80px
+    INPUT
+      width: 100px
+
     NAV UL
       display: flex
+      display: -webkit-flex
       margin: 0
       padding: 0
       list-style: none
       LI
+        display: inline-block
+        list-style: none
         flex-grow: 1
+        -webkit-flex-grow: 1
 
   .foot
     display: flex
+    display: -webket-flex
     border-top: 1px solid #333
     padding: 4px 10px
-    text-align: center
 
   .page-nav
-    margin-top: 15px
+    text-align: right
+    margin-bottom: -90px
     display: flex
+    display: -webket-flex
     flex-direction: row-reverse
+    -webkit-flex-direction: row-reverse
 
 
 // -----------------------------------------------------------------------------
@@ -101,14 +120,19 @@ h2
 
 .tile-btn
   display: flex
+  display: -webket-flex
   flex-direction: column
+  -webkit-flex-direction: column
   width: 100px
   height: 100px
   line-height: 20px
   margin: 10px 10px
   text-align: center
   .icon
+    display: flex
+    display: -webkit-flex
     flex: 1
+    -webket-flex: 1
     border: 1px dotted #666
     margin: 4px 0 6px
     line-height: 12px
@@ -116,7 +140,9 @@ h2
 
 .tiles
   display: flex
+  display: -webket-flex
   flex-wrap: wrap
+  -webkit-flex-wrap: wrap
 
 .fields
   margin: 0
@@ -187,7 +213,7 @@ h2
 
 .preset-tiles .tile-btn
   width: 148px
-  height: 45px
+  height: 38px
 
 // -----------------------------------------------------------------------------
 // Page Instances

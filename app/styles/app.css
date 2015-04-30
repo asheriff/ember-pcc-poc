@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+BODY {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  background: #000;
+  color: #000;
+  font-family: Helvetica;
+}
+h1 {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+h2 {
+  padding: 0;
+  margin: 0 0 10px;
+  font-size: 16px;
+  text-align: center;
+}
+.lcd-wrapper {
+  display: flex;
+  display: -webket-flex;
+  flex-direction: column;
+-webkiit-
+  width: 800px;
+  height: 480px;
+  border: 2px solid #000;
+  background: #ccc;
+}
+.lcd-wrapper .main {
+  flex: 1;
+  -webket-flex: 1;
+  padding: 10px;
+}
+.lcd-wrapper .main .page-content {
+  height: 333px;
+}
+.lcd-wrapper .status-bar {
+  padding: 4px 10px;
+  background: #999;
+}
+.lcd-wrapper .status-bar .head {
+  display: flex;
+  display: -webket-flex;
+  margin-bottom: 4px;
+}
+.lcd-wrapper .status-bar .head H1 {
+  flex-grow: 1;
+}
+.lcd-wrapper .status-bar .date {
+  position: absolute;
+}
+.lcd-wrapper .status-bar .label {
+  width: 80px;
+}
+.lcd-wrapper .status-bar INPUT {
+  width: 100px;
+}
+.lcd-wrapper .status-bar NAV UL {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lcd-wrapper .status-bar NAV UL LI {
+  display: inline-block;
+  list-style: none;
+  flex-grow: 1;
+}
+.lcd-wrapper .foot {
+  display: flex;
+  border-top: 1px solid #333;
+  padding: 4px 10px;
+  text-align: center;
+}
+.lcd-wrapper .page-nav {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.btn {
+  display: inline-block;
+  line-height: 40px;
+  padding: 6px 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background-color: #eee;
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+.btn-disabled {
+  background-color: #bbb;
+  border-color: #aaa;
+  color: #666;
+}
+.tile-btn {
+  display: flex;
+  display: -webket-flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  line-height: 20px;
+  margin: 10px 10px;
+  text-align: center;
+}
+.tile-btn .icon {
+  flex: 1;
+  -webket-flex: 1;
+  border: 1px dotted #666;
+  margin: 4px 0 6px;
+  line-height: 12px;
+  font-size: 12px;
+}
+.tiles {
+  display: flex;
+  display: -webket-flex;
+  flex-wrap: wrap;
+}
+.fields {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fields .field {
+  margin: 0;
+  height: 100px;
+}
+.fields .field > * {
+  vertical-align: top;
+}
+.fields.horizontal .field {
+  display: inline-block;
+}
+.switch {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+.switch-label {
+  font-size: 12px;
+}
+.switch-control {
+  display: inline-block;
+  width: 100px;
+  height: 48px;
+  padding: 2px;
+  border: 1px solid #666;
+  border-radius: 16px;
+}
+.switch.on .switch-control {
+  background-color: #0c0;
+}
+.switch.off .switch-control {
+  background-color: #c00;
+}
+.switch-btn {
+  float: right;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #666;
+  border-radius: 12px;
+  background: #999;
+}
+.switch-state-label {
+  float: left;
+  padding: 0 10px;
+  line-height: 44px;
+}
+.switch.on .switch-control .switch-btn {
+  float: left;
+}
+.switch.on .switch-control .switch-state-label {
+  float: right;
+}
+.foot .tile-btn,
+.page-nav .tile-btn {
+  width: 60px;
+  height: 40px;
+}
+.page-nav .tile-btn {
+  width: 148px;
+}
+.preset-tiles .tile-btn {
+  width: 148px;
+  height: 38px;
+}
+.page-content.ccu .switch {
+  margin-right: 30px;
+}
+.page-content.ccu .btn {
+  width: 100px;
+  margin-right: 10px;
+}
+.page-content.ccu-scenes .btn {
+  width: 200px;
+}
