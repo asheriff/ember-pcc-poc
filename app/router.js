@@ -16,6 +16,6 @@ export default Router.map(function() {
   this.route('ccu-scene');
   this.route('streaming');
   this.route('macro');
-  this.route('address');
+  this.route('control-group');
   this.route('settings');
 });

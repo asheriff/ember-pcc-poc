@@ -25,7 +25,7 @@ export default Ember.Route.extend({
       },
       {
         name: 'Address Book',
-        route: 'address'
+        route: 'control-group'
       },
       {
         name: 'Settings',

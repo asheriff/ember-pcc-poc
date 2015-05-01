@@ -16,18 +16,23 @@ BODY
   color: #000
   font-family: Helvetica
 
-h1
+H1
   font-size: 14px
   padding: 0
   margin: 0
   text-align: center
 
-h2
+H2
   padding: 0
   margin: 0 0 10px
   font-size: 16px
   text-align: center
 
+SELECT
+  appearance: none
+  -webkit-appearance: none
+  font-size: 16px
+  padding: 18px 5px
 
 // -----------------------------------------------------------------------------
 // Structure
@@ -99,6 +104,18 @@ h2
 
 
 // -----------------------------------------------------------------------------
+// Layouts
+// -----------------------------------------------------------------------------
+.flex-rows
+  height: 100%
+  display: flex
+  display: -webket-flex
+  flex-direction: column
+  -webkit-flex-direction: column
+  .flex-item
+    flex: 1
+
+// -----------------------------------------------------------------------------
 // Components
 // -----------------------------------------------------------------------------
 .btn
@@ -157,6 +174,7 @@ h2
 .fields.horizontal
   .field
     display: inline-block
+    margin-right: 10px
 
 
 .switch
@@ -228,3 +246,11 @@ h2
 .page-content.ccu-scenes
   .btn
     width: 200px
+
+// -----------------------------------------------------------------------------
+// What Am I?
+// -----------------------------------------------------------------------------
+.control-group
+  H3
+    font-size: 16px
+    font-weight: bold
