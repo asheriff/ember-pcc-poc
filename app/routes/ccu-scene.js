@@ -5,7 +5,7 @@ var SCENE_NAMES = [
   'Custom A', 'My Label', 'Custom C',
   'Auto', 'Incandescent Hi', 'Flourescent Hi',
   'Outdoor', 'Incandescent Lo', 'Flourescent Lo'
-]
+];
 
 export default Ember.Route.extend({
   model: function() {

@@ -1,0 +1,18 @@
+<div class='page-content'>
+  <h2>Communication</h2>
+  {{switch-button  label='RS-232 Mode'}}
+
+  <hr/>
+
+  <h2>LDC Display</h2>
+  <ul class='fields horizontal'>
+    <li class='field'>
+      {{#link-to "edit-attr" "contrast" classNames="btn" }}Contrast...{{/link-to}}
+      {{#link-to "edit-attr" "brightness" classNames="btn" }}Brightness...{{/link-to}}
+    </li>
+  </ul>
+</div>
+
+<div class='tiles page-nav'>
+  {{back-button}}
+</div>

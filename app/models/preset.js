@@ -8,13 +8,13 @@ let Preset = DS.Model.extend({
 var CUSTOM_LABELS = {
   '0': 'Whiteboard',
   '1': 'Classroom'
-}
+};
 
 Preset.reopenClass({
   FIXTURES: _.times(16, function(idx) {
     return {
       id: idx,
-      is_set: Math.random() > .7,
+      is_set: Math.random() > 0.7,
       name: CUSTOM_LABELS[idx+''] || 'Preset ' + (idx + 1)
     };
   })

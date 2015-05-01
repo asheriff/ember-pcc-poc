@@ -8,6 +8,7 @@ var Router = Ember.Router.extend({
 
 export default Router.map(function() {
   this.route('home');
+  this.route('standby');
   this.route('preset', function() {
     this.route(':preset_id');
   });
@@ -16,6 +17,7 @@ export default Router.map(function() {
   this.route('ccu-scene');
   this.route('streaming');
   this.route('macro');
-  this.route('control-group');
   this.route('settings');
+  this.route('control-bus');
+  this.route('edit-attr', { path: '/edit-attr/:key' });
 });

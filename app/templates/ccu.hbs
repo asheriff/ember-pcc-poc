@@ -4,8 +4,8 @@
   <ul class='fields'>
     <li class='field'>
       {{switch-button label='Auto Iris'}}
-      <a href='#' class='btn'>Iris...</a>
-      <a href='#' class='btn'>Iris Gain...</a>
+      {{#link-to "edit-attr" "iris" classNames="btn" }}Iris...{{/link-to}}
+      {{#link-to "edit-attr" "iris-gain" classNames="btn" }}Iris Gain...{{/link-to}}
       {{switch-button label='Back Light Compensation'}}
     </li>
   </ul>
@@ -13,24 +13,18 @@
   <ul class='fields'>
     <li class='field'>
       {{switch-button label='Auto White Balance'}}
-      <a href='#' class='btn btn-disabled'>Red Gain...</a>
-      <a href='#' class='btn btn-disabled'>Blue Gain...</a>
-      <a href='#' class='btn btn-disabled'>One Push...</a>
+      {{#link-to "edit-attr" "red" classNames="btn" }}Red Gain...{{/link-to}}
+      {{#link-to "edit-attr" "blue" classNames="btn" }}Blue Gain...{{/link-to}}
+      {{#link-to "edit-attr" "opwb" classNames="btn" }}One Push...{{/link-to}}
     </li>
   </ul>
 
   <ul class='fields horizontal'>
     <li class='field'>
-      <a href='#' class='btn'>Detail...</a>
-    </li>
-    <li class='field'>
-      <a href='#' class='btn'>Chroma...</a>
-    </li>
-    <li class='field'>
-      <a href='#' class='btn'>Gamma...</a>
-    </li>
-    <li class='field'>
-      <a href='#' class='btn'>Brightness...</a>
+      {{#link-to "edit-attr" "detail" classNames="btn" }}Detail...{{/link-to}}
+      {{#link-to "edit-attr" "chroma" classNames="btn" }}Chroma...{{/link-to}}
+      {{#link-to "edit-attr" "gamma" classNames="btn" }}Gamma...{{/link-to}}
+      {{#link-to "edit-attr" "brightness" classNames="btn" }}Brightness...{{/link-to}}
     </li>
   </ul>
 </div>
@@ -41,8 +35,5 @@
     <span class='text'>Store...</span>
   {{/link-to}}
 
-  {{#link-to 'home' class='btn tile-btn'}}
-    <span class='icon'>~icon~</span>
-    <span class='text'>Back</span>
-  {{/link-to}}
+  {{back-button}}
 </div>

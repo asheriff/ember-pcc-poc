@@ -2,26 +2,20 @@
   <h2>Address Book</h2>
 
   <div class='flex-rows control-groups'>
-    {{#each}}
+    {{#each bus in model}}
       <div class='flex-item control-group'>
-        <h3>{{name}}</h3>
+        <h3>{{bus.name}}</h3>
         <ul class='fields horizontal'>
           <li class='field'>
             {{switch-button}}
           </li>
           <li class='field'>
-            <select>
-              <option>Training Room 101</option>
-              <option>Rotunda Hall</option>
-              <option>North Classroom</option>
-              <option>Auditorium</option>
-              <option>Other Group 5</option>
-              <option>Other Group 6</option>
-              <option>Other Group 7</option>
-              <option>Other Group 8</option>
-              <option>Other Group 9</option>
-              <option>10 Is The Max Num of Groups</option>
-            </select>
+           {{view "select"
+              content=groups
+              optionValuePath="content"
+              optionLabelPath="content.user_label"
+              value=bus.group
+            }}
           </li>
           <li class='field'>
             {{#link-to 'macro' class='btn'}}Info...{{/link-to}}

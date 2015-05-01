@@ -25,14 +25,15 @@ export default Ember.Route.extend({
       },
       {
         name: 'Address Book',
-        route: 'control-group'
+        route: 'control-bus'
       },
       {
         name: 'Settings',
         route: 'settings'
       },
       {
-        name: 'Power'
+        name: 'Power',
+        route: 'standby'
       }
     ];
   }

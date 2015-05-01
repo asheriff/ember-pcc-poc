@@ -3,12 +3,16 @@
 
   <ul class='fields'>
     <li class='field'>
-      <a href='#' class='btn'>Select Preset...</a>
+      {{view "select"
+          content=presets
+          optionValuePath="content"
+          optionLabelPath="content.name"
+        }}
     </li>
 
     <li class='field'>
       {{switch-button label='Trisync'}}
-      <a href='#' class='btn btn-disabled'>Trisync Speed...</a>
+      {{#link-to "edit-attr" "trisync" classNames="btn" }}Trisync Speed...{{/link-to}}
     </li>
 
     <li class='field'>
@@ -23,8 +27,5 @@
     <span class='text'>Save</span>
   {{/link-to}}
 
-  {{#link-to 'preset' class='btn tile-btn'}}
-    <span class='icon'>~icon~</span>
-    <span class='text'>Back</span>
-  {{/link-to}}
+  {{back-button}}
 </div>
