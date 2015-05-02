@@ -177,6 +177,7 @@ SELECT
     margin-right: 10px
 
 
+// Flip Switch
 .switch
   display: inline-block
   margin-right: 10px
@@ -218,6 +219,52 @@ SELECT
   .switch-state-label
     float: left
 
+// Slider
+.slider
+  margin-top: 30px
+
+.slider-controls
+  display: flex
+  display: -webket-flex
+
+.slider-info
+  margin-top: 35px
+  text-align: center
+
+.slider-value
+  display: inline-block
+  min-width: 100px
+  line-height: 40px
+  padding: 0 6px
+  border-radius: 6px
+  background: #FFF
+  font-size: 26px
+  text-align: right
+
+.slider-bar
+  flex: 1
+  -webket-flex: 1
+  position: relative
+  margin: 0 10px
+  border: 1px solid #666
+  border-radius: 5px
+  background: #DDD
+
+.slider-grip
+  position: absolute
+  top: -15px
+  left: 39%
+  display: inline-block
+  width: 30px
+  height: 80px
+  background: #999
+  border: 1px solid #666
+  border-radius: 15px
+
+.slider-btn
+  width: 40px
+  font-size: 30px
+
 // -----------------------------------------------------------------------------
 // Component Instances
 // -----------------------------------------------------------------------------
@@ -246,6 +293,10 @@ SELECT
 .page-content.ccu-scenes
   .btn
     width: 200px
+
+.edit-attr
+  H2
+    font-size: 30px
 
 // -----------------------------------------------------------------------------
 // What Am I?
