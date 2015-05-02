@@ -5,13 +5,15 @@ let Preset = DS.Model.extend({
   name: DS.attr()
 });
 
+var MODEL_COUNT = 16;
+
 var CUSTOM_LABELS = {
   '0': 'Whiteboard',
   '1': 'Classroom'
 };
 
 Preset.reopenClass({
-  FIXTURES: _.times(16, function(idx) {
+  FIXTURES: _.times(MODEL_COUNT, function(idx) {
     return {
       id: idx,
       is_set: Math.random() > 0.7,
