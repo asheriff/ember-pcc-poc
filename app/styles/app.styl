@@ -34,8 +34,10 @@ H2
 SELECT
   appearance: none
   -webkit-appearance: none
+  background-color: #FFF
+  padding: 16px 5px
+  border-radius: 4px
   font-size: 16px
-  padding: 18px 5px
 
 
 // -----------------------------------------------------------------------------
@@ -284,10 +286,12 @@ $LCD_OFFSET = 140px
   flex: 1
   -webket-flex: 1
   position: relative
+  height: 52px
   margin: 0 10px
   border: 1px solid #666
   border-radius: 5px
   background: #DDD
+  cursor: pointer
 
 .slider-grip
   position: absolute
@@ -299,6 +303,7 @@ $LCD_OFFSET = 140px
   background: #999
   border: 1px solid #666
   border-radius: 15px
+  cursor: col-resize
 
 .slider-btn
   width: 40px
@@ -369,6 +374,8 @@ $LCD_OFFSET = 140px
 
 .p-knob
   .p-btn
+    cursor: grab
+    cursor: -webkit-grab
     display: inline-block
     width: 72px
     height: 72px
@@ -394,10 +401,23 @@ $LCD_OFFSET = 140px
     border-width: 2px
     border-radius: 20px
 
-.p-btn
-  cursor: grab
-  cursor: -webkit-grab
+@keyframes pBtnError {
+   0%  { border-color:  #333 }
+   50% { border-color:  #FFF }
+  100% { border-color:  #333 }
+}
+
+
+.p-btn, .p-btn-bus BUTTON
   &:ACTIVE
     cursor: pointer
-  &:HOVER
-    color: #CCC
+  &.p-btn-inactive
+    border-color:  #333
+  &.p-btn-active
+    border-color:  #FFF
+  &.p-btn-error
+    -webkit-animation-name: pBtnError
+    -webkit-animation-duration: 1s
+    -webkit-animation-iteration-count: infinite;
+  &.p-btn-selected
+    border-color: #33F
