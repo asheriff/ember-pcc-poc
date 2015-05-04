@@ -3,7 +3,7 @@ import config from './config/environment';
 
 var Router = Ember.Router.extend({
   location: config.locationType,
-  rootUrl: '/home/'
+  rootUrl: '/src/vaddio/pcc-native-web-proto/xxx/'
 });
 
 export default Router.map(function() {
