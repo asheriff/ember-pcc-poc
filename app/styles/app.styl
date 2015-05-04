@@ -16,6 +16,9 @@ BODY
   color: #000
   font-family: Helvetica
 
+A, BUTTON
+  cursor: pointer
+
 H1
   font-size: 14px
   padding: 0
@@ -34,6 +37,40 @@ SELECT
   font-size: 16px
   padding: 18px 5px
 
+
+// -----------------------------------------------------------------------------
+// Page Layout
+// -----------------------------------------------------------------------------
+$LCD_WIDTH = 800px
+$LCD_HEIGHT = 480px
+$LCD_OFFSET = 140px
+
+.page-layout-item
+  position: absolute
+
+#LCD
+  top: 0px
+  left: $LCD_OFFSET
+  width: $LCD_WIDTH
+  height: $LCD_HEIGHT
+
+#Focus
+  top: 60px
+  left: 20px
+
+#Menu
+  top: 60px
+  left: $LCD_WIDTH + $LCD_OFFSET + 40px
+
+#PtzSpeeds
+  top: 200px
+  left: $LCD_WIDTH + $LCD_OFFSET + 40px
+
+#ControlBus
+  top: $LCD_HEIGHT + 20px
+  left: $LCD_OFFSET + 100px
+
+
 // -----------------------------------------------------------------------------
 // Structure
 // -----------------------------------------------------------------------------
@@ -42,8 +79,6 @@ SELECT
   display: -webket-flex
   flex-direction: column
   -webkit-flex-direction: column
-  width: 800px
-  height: 480px
   border: 2px solid #000
   background: #CCC
 
@@ -305,3 +340,60 @@ SELECT
   H3
     font-size: 16px
     font-weight: bold
+
+// -----------------------------------------------------------------------------
+// Physical
+// -----------------------------------------------------------------------------
+.physical, .physical A
+  color: #FFF
+
+  EM
+    display: block
+    font-style: normal
+
+  BUTTON
+    width: 30px
+    height: 10px
+    border-radius: 10px
+    background: #222
+    margin: 0 10px
+
+.p-btn-bus
+  margin: 10px 0
+  EM
+    display: inline-block
+
+.p-knob
+  .p-btn
+    display: inline-block
+    width: 72px
+    height: 72px
+    border: 6px outset
+    border-radius: 46px
+    background: #222
+  EM
+    text-align: center
+    margin: 0px auto 4px
+
+.p-ptz-controls
+  EM
+    margin: 0 0 10px
+
+.p-ptz-control
+  display: inline-block
+  width: 50px
+  text-align: center
+  .p-btn
+    width: 20px
+    height: 20px
+    margin: 0px auto
+    border-width: 2px
+    border-radius: 20px
+
+.p-btn
+  cursor: grab
+  cursor: -webkit-grab
+  &:ACTIVE
+    cursor: pointer
+  &:HOVER
+    color: #CCC
