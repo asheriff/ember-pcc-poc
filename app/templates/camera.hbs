@@ -1,0 +1,28 @@
+<div class='page-content'>
+  <h2>Streaming &raquo; Control Group B?</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Camera Name</th>
+        <th>IP Address</th>
+        <th>Streaming URL</th>
+        <th>Enable Decode</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each}}
+        <tr>
+          <td>{{name}}</td>
+          <td>{{ip}}</td>
+          <td>{{url}}</td>
+          <td>{{switch-button}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
+
+<div class='tiles page-nav'>
+  {{back-button}}
+</div>

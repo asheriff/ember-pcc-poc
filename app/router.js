@@ -15,7 +15,7 @@ export default Router.map(function() {
   this.route('preset/store');
   this.route('ccu');
   this.route('ccu-scene');
-  this.route('streaming');
+  this.route('camera');
   this.route('macro');
   this.route('settings');
   this.route('control-bus');

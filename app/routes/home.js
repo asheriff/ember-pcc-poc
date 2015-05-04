@@ -16,10 +16,6 @@ export default Ember.Route.extend({
         route: 'ccu-scene'
       },
       {
-        name: 'Streaming',
-        route: 'streaming'
-      },
-      {
         name: 'Macros',
         route: 'macro'
       },
