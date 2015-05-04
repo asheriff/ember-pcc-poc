@@ -13,6 +13,17 @@ App = Ember.Application.extend({
   Resolver: Resolver
 });
 
+App.initializer({
+  name: 'back-button',
+  initialize: function() {
+    $('BODY').on('click', '.back-button', function(e) {
+      e.preventDefault();
+      window.history.back();
+      return false;
+    });
+  }
+});
+
 loadInitializers(App, config.modulePrefix);
 
 export default App;

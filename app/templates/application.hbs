@@ -1,4 +1,6 @@
-<div class='lcd-wrapper'>
+{{outlet 'modal'}}
+
+<div id='LCD' class='page-layout-item lcd-wrapper'>
   <div class='status-bar'>
     <div class='head'>
       <span class='date'>5/12/15 11:59:59</span>
@@ -39,4 +41,41 @@
   </div>
 </div>
 
-{{outlet 'modal'}}
+<div class='physical'>
+  <div id='Focus' class='p-knob page-layout-item'>
+    <em>Focus</em>
+    {{#link-to "edit-attr" "focus" classNames="p-btn" }}{{/link-to}}
+  </div>
+
+  <div id='Menu' class='p-knob page-layout-item'>
+    <em>Menu</em>
+    <a class='p-btn back-button' href='#'></a>
+  </div>
+
+  <div id='PtzSpeeds' class='page-layout-item p-ptz-controls'>
+    <em>Some Label I Cannot Decipher</em>
+    <div class='p-ptz-control p-knob'>
+      {{#link-to "edit-attr" "pan" classNames="p-btn" }}{{/link-to}}
+      <em>Pan</em>
+    </div>
+    <div class='p-ptz-control p-knob'>
+      {{#link-to "edit-attr" "tilt" classNames="p-btn" }}{{/link-to}}
+      <em>Tilt</em>
+    </div>
+    <div class='p-ptz-control p-knob'>
+      {{#link-to "edit-attr" "zoom" classNames="p-btn" }}{{/link-to}}
+      <em>Zoom</em>
+    </div>
+  </div>
+
+  <div id='ControlBus' class='page-layout-item'>
+    <div class='p-btn-bus'>
+      <em>Control A</em>
+      <button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+    </div>
+    <div class='p-btn-bus'>
+      <em>Control B</em>
+      <button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+    </div>
+  </div>
+</div>

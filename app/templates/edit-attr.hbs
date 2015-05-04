@@ -1,7 +1,22 @@
-<div class='page-content'>
+<div class='page-content edit-attr'>
   <h2>{{name}}</h2>
+
+  <div class='slider'>
+    <div class='slider-controls'>
+      <button class='btn slider-btn'>&laquo;</button>
+      <div class='slider-bar'>
+        <a class='slider-grip'></a>
+      </div>
+      <button class='btn slider-btn'>&raquo;</button>
+    </div>
+    <div class='slider-info'>
+      <span class='slider-value'>40</span>
+    </div>
+  </div>
+
 </div>
 
 <div class='tiles page-nav'>
-  {{back-button}}
+  {{back-button text='OK'}}
+  {{back-button text='Cancel'}}
 </div>
